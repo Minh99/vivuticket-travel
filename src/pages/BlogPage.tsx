@@ -24,14 +24,17 @@ const BlogPage = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-white rounded-[32px] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group"
+              className="bg-white rounded-[32px] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group flex flex-col h-full"
             >
-              <div className="relative h-60 overflow-hidden">
+              <div className="relative h-60 overflow-hidden flex-shrink-0">
                 <img
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800';
+                  }}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-sky-500 text-white px-4 py-1 rounded-full text-xs font-bold">
@@ -39,7 +42,7 @@ const BlogPage = () => {
                   </span>
                 </div>
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-4 text-xs text-slate-400 mb-4">
                   <div className="flex items-center gap-1">
                     <Calendar size={14} />
@@ -53,12 +56,12 @@ const BlogPage = () => {
                 <h3 className="text-xl font-bold text-slate-900 mb-4 line-clamp-2 group-hover:text-sky-600 transition-colors">
                   {blog.title}
                 </h3>
-                <p className="text-slate-500 text-sm mb-6 line-clamp-3 leading-relaxed">
+                <p className="text-slate-500 text-sm mb-6 line-clamp-3 leading-relaxed flex-1">
                   {blog.excerpt}
                 </p>
                 <Link
                   to={`/blog/${blog.id}`}
-                  className="flex items-center gap-2 text-sky-600 font-bold hover:gap-3 transition-all"
+                  className="flex items-center gap-2 text-sky-600 font-bold hover:gap-3 transition-all mt-auto"
                 >
                   Đọc tiếp <ArrowRight size={18} />
                 </Link>

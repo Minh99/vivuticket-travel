@@ -38,4 +38,26 @@ export interface AttractionTicket extends BaseTicket {
   category: string;
 }
 
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  date: string;
+  category: string;
+}
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  author: string;
+  date: string;
+  category: string;
+}
+
 export type Ticket = FlightTicket | TourTicket | AttractionTicket;

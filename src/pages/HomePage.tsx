@@ -68,7 +68,7 @@ const HomePage = () => {
         <div className="bg-slate-900 rounded-[40px] p-8 md:p-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
             <img
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1000"
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1000"
               alt="Travel"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
