@@ -103,7 +103,7 @@ export const MOCK_BLOGS: BlogPost[] = [
     title: 'Kinh nghiệm du lịch Đà Nẵng tự túc từ A-Z',
     excerpt: 'Đà Nẵng không chỉ nổi tiếng với những bãi biển đẹp mà còn có nền ẩm thực vô cùng phong phú...',
     content: 'Đà Nẵng là một trong những thành phố đáng sống nhất Việt Nam. Với bãi biển Mỹ Khê quyến rũ, bán đảo Sơn Trà hùng vĩ và những cây cầu độc đáo, Đà Nẵng luôn là điểm đến hấp dẫn du khách trong và ngoài nước. Trong bài viết này, chúng tôi sẽ chia sẻ những kinh nghiệm du lịch Đà Nẵng tự túc chi tiết nhất để bạn có một chuyến đi trọn vẹn.',
-    image: 'https://images.unsplash.com/photo-1559592442-7e182c9c03f1?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=800',
     author: 'Admin',
     date: '2024-03-20',
     category: 'Kinh nghiệm'
